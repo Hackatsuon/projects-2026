@@ -25,7 +25,9 @@
         "Ron Turetzky"
       ],
       "title": "Hoya Botto — An Automation Cooperative for Kesennuma",
-      "description": "Hoya Botto explores affordable AI-assisted robotics for Kesennuma manufacturers, starting with one box flap. A proposed automation cooperative shares engineering, trains local people and measures savings.",
+      "description_en": "Hoya Botto explores affordable AI-assisted robotics for Kesennuma manufacturers, starting with one box flap. A proposed automation cooperative shares engineering, trains local people and measures savings.",
+      "description_ja": "気仙沼の製造業向けに、手頃な価格で導入できる AI 支援ロボティクスを探る取り組みです。まずは箱のフタを閉じる作業ひとつから始めます。提案する「自動化協同組合」は、エンジニアリングを共有し、地元の人を育て、削減効果を測定します。",
+      "generated": "ja",
       "demo_url": "https://ronturetzky.github.io/hoyabotto/demo.html",
       "source_url": "https://github.com/RonTuretzky/hoyabotto",
       "slides_url": "https://ronturetzky.github.io/hoyabotto/",
@@ -43,15 +45,17 @@
         "Sailesh Sivakumar"
       ],
       "title": "KesenMemento",
-      "description": "KesenMemento turns Kesennuma into a digital playground, so that users can play in both in virtual worlds and reality. As users play more, the digital twin of KesenMemento improves!",
+      "description_en": "KesenMemento turns Kesennuma into a digital playground, so that users can play in both in virtual worlds and reality. As users play more, the digital twin of KesenMemento improves!",
+      "description_ja": "KesenMemento は気仙沼をデジタルの遊び場に変え、仮想世界と現実の両方で遊べるようにします。遊ぶ人が増えるほど、KesenMemento のデジタルツインは良くなっていきます。",
+      "generated": "ja",
       "demo_url": "https://kesenmemento.com",
       "source_url": "https://github.com/ss251/kesenmemento-v2",
       "slides_url": "https://drive.google.com/file/d/1XGISW0arNvuppcRLahsyilDG6BOUt1e1/view?usp=drive_link",
       "other_url": "https://drive.google.com/drive/folders/1wHGanH-2_OEPphHA13v9vzH8t_JZFMqX",
       "submitted_at": "2026-10-08T22:55:46+09:00",
-      "thumbnail": "thumbs/kesenmemento.jpg",
+      "thumbnail": "thumbs/slides/kesenmemento.jpg",
       "award": null,
-      "thumbnail_source": "https://kesenmemento.com"
+      "thumbnail_source": "https://drive.google.com/file/d/1XGISW0arNvuppcRLahsyilDG6BOUt1e1/view?usp=drive_link"
     },
     {
       "id": "gyoseki",
@@ -61,15 +65,17 @@
         "上野 響"
       ],
       "title": "魚籍",
-      "description": "気仙沼の魚が水揚げされてから消費者に届くまでのサプライチェーンをブロックチェーンで管理し、IUU漁業による違法漁獲ではないことを証明するシステム。\n気仙沼で獲れた魚1匹1匹の戸籍となる。",
+      "description_ja": "気仙沼の魚が水揚げされてから消費者に届くまでのサプライチェーンをブロックチェーンで管理し、IUU漁業による違法漁獲ではないことを証明するシステム。\n気仙沼で獲れた魚1匹1匹の戸籍となる。",
+      "description_en": "A system that manages the supply chain of Kesennuma fish on a blockchain, from landing to consumer, to prove the catch does not come from IUU (illegal, unreported and unregulated) fishing.\nIt becomes a family register for every single fish caught in Kesennuma.",
+      "generated": "en",
       "demo_url": "https://kesennuma-hackathon.vercel.app/",
       "source_url": "https://github.com/uh0510/kesennuma-hackathon/",
       "slides_url": "https://kesennuma-hackathon.vercel.app/slides/",
       "other_url": "https://kesennuma-hackathon.vercel.app/rfid/#market",
       "submitted_at": "2026-10-08T22:58:47+09:00",
-      "thumbnail": "thumbs/gyoseki.jpg",
+      "thumbnail": "thumbs/slides/gyoseki.jpg",
       "award": null,
-      "thumbnail_source": "https://kesennuma-hackathon.vercel.app/rfid/#market"
+      "thumbnail_source": "https://kesennuma-hackathon.vercel.app/slides/"
     },
     {
       "id": "digicolle",
@@ -78,15 +84,17 @@
         "Megumi Itabayashi"
       ],
       "title": "デジカレ受講生専用ページ / Digital College UP Student Page",
-      "description": "気仙沼の女性向けデジタル学習プログラム「デジタルカレッジUP」の受講生専用ページです。LINEで流れてしまいがちな次回のお知らせや申し込みフォームを一か所にまとめ、チャットボット「デジカレくん」が質問に答えます。答えられない質問は事務局に届きます。\n\nA one-stop page for students of Digital College UP, a digital skills program for women in Kesennuma: next-session info, application forms, and a chatbot that forwards unanswered questions to staff.",
+      "description_ja": "気仙沼の女性向けデジタル学習プログラム「デジタルカレッジUP」の受講生専用ページです。LINEで流れてしまいがちな次回のお知らせや申し込みフォームを一か所にまとめ、チャットボット「デジカレくん」が質問に答えます。答えられない質問は事務局に届きます。",
+      "description_en": "A one-stop page for students of Digital College UP, a digital skills program for women in Kesennuma: next-session info, application forms, and a chatbot that forwards unanswered questions to staff.",
+      "generated": null,
       "demo_url": "https://itabayashimegumi-beep.github.io/hackatsuon/",
       "source_url": "https://github.com/itabayashimegumi-beep/hackatsuon",
       "slides_url": "https://docs.google.com/presentation/d/1P50l-FJWy_eAAl0E_bzgtHQqMMjR9hjMdUS5GVQn6NQ/edit?usp=sharing",
       "other_url": null,
       "submitted_at": "2026-10-08T23:25:02+09:00",
-      "thumbnail": "thumbs/digicolle.jpg",
+      "thumbnail": "thumbs/slides/digicolle.jpg",
       "award": null,
-      "thumbnail_source": "https://itabayashimegumi-beep.github.io/hackatsuon/"
+      "thumbnail_source": "https://docs.google.com/presentation/d/1P50l-FJWy_eAAl0E_bzgtHQqMMjR9hjMdUS5GVQn6NQ/edit?usp=sharing"
     },
     {
       "id": "sharkshield",
@@ -96,7 +104,9 @@
         "Hemang"
       ],
       "title": "SharkShield",
-      "description": "SharkShield is a device for long line tuna fishers that detects hooked fish, records fishing events, and activates an electric deterrent intended to reduce predation by sharks.",
+      "description_en": "SharkShield is a device for long line tuna fishers that detects hooked fish, records fishing events, and activates an electric deterrent intended to reduce predation by sharks.",
+      "description_ja": "SharkShield は、はえ縄のマグロ漁師向けの装置です。魚がかかったことを検知し、漁の記録を取り、電気的な忌避装置を作動させて、サメによる食害を減らすことを目指します。",
+      "generated": "ja",
       "demo_url": "https://sharkshield.vercel.app",
       "source_url": "https://github.com/Denjin-K/sharkshield",
       "slides_url": "https://drive.google.com/file/d/1RH2nVB0OtwT_Gw98jWmzQrDzKl0Iiibh/view?usp=sharing",
@@ -114,7 +124,9 @@
         "Eric Manganaro"
       ],
       "title": "GALAXSI — Super Intelligent Factory",
-      "description": "A proposed advanced manufacturing and training hub in Kesennuma, Japan. It brings together shared production equipment, AI, robotics and practical learning to help local businesses develop products, solve industrial problems and build new skills.\n\nKesennuma already has deep experience in fisheries, food production, machinery and repair. GALAXSI builds on that knowledge, making modern manufacturing capabilities more accessible without requiring every business to build its own specialist team or facility.\n\nThe goal is practical: strengthen local industry, create opportunities for the next generation and develop skills that are relevant anywhere in the world.\n\nLearn here. Build here. Compete anywhere.",
+      "description_en": "A proposed advanced manufacturing and training hub in Kesennuma, Japan. It brings together shared production equipment, AI, robotics and practical learning to help local businesses develop products, solve industrial problems and build new skills.\n\nKesennuma already has deep experience in fisheries, food production, machinery and repair. GALAXSI builds on that knowledge, making modern manufacturing capabilities more accessible without requiring every business to build its own specialist team or facility.\n\nThe goal is practical: strengthen local industry, create opportunities for the next generation and develop skills that are relevant anywhere in the world.\n\nLearn here. Build here. Compete anywhere.",
+      "description_ja": "気仙沼に、先進的な製造・研修拠点をつくる提案です。共有の生産設備、AI、ロボティクス、実践的な学びを組み合わせ、地元企業の製品開発、工業的な課題の解決、新しいスキルの習得を支えます。\n\n気仙沼には水産、食品製造、機械、修理の深い経験がすでにあります。GALAXSI はその知識の上に立ち、各企業が自前の専門チームや設備を持たなくても、現代的な製造能力を使えるようにします。\n\n目標は実践的です。地場産業を強くし、次の世代に機会をつくり、世界のどこでも通用するスキルを育てること。\n\nここで学び、ここでつくり、どこででも戦う。",
+      "generated": "ja",
       "demo_url": "https://www.galaxsi.org",
       "source_url": "https://github.com/magic-cabinet/galaxy",
       "slides_url": "https://galaxsi.org/presentation/galaxsi-2026-ja.pdf",
@@ -132,15 +144,17 @@
         "with help from Pablo"
       ],
       "title": "Citizen Sentiment",
-      "description": "Citizen Sentiment is a simple app that enables Kesennuma city officials to gather the preferences of citizens about a future project. It’s primarily visual where images, in A/B format, are distributed in multiple media, including web, app, and paper. Each distribution includes a QR code link. Citizens can scan the QR code and land on a page in the Citizen Sentiment app. They make a choice between image A and B and submit their preference. The city can then gauge the sentiment of the populace when making design decisions.",
+      "description_en": "Citizen Sentiment is a simple app that enables Kesennuma city officials to gather the preferences of citizens about a future project. It’s primarily visual where images, in A/B format, are distributed in multiple media, including web, app, and paper. Each distribution includes a QR code link. Citizens can scan the QR code and land on a page in the Citizen Sentiment app. They make a choice between image A and B and submit their preference. The city can then gauge the sentiment of the populace when making design decisions.",
+      "description_ja": "Citizen Sentiment は、気仙沼市の職員が将来の事業について市民の意向を集めるためのシンプルなアプリです。主にビジュアルで、A/B 形式の画像を Web、アプリ、紙など複数の媒体で配布します。それぞれに QR コードのリンクが付いていて、市民はコードを読み取ると Citizen Sentiment のページに着き、A と B のどちらかを選んで送信します。市はその結果から、設計を決めるときの市民の意向を測れます。",
+      "generated": "ja",
       "demo_url": "https://citizen-sentiment-kesennuma.netlify.app/ja/poll",
       "source_url": "https://github.com/kitblake/citizensentiment",
       "slides_url": "https://docs.google.com/presentation/d/1MgNv7ET512Ok534cw667VMeXVcHkJLhF92t5bHKhpb8/edit?usp=sharing",
       "other_url": null,
       "submitted_at": "2026-10-09T09:18:59+09:00",
-      "thumbnail": "thumbs/citizen-sentiment.jpg",
+      "thumbnail": "thumbs/slides/citizen-sentiment.jpg",
       "award": null,
-      "thumbnail_source": "https://citizen-sentiment-kesennuma.netlify.app/ja/poll"
+      "thumbnail_source": "https://docs.google.com/presentation/d/1MgNv7ET512Ok534cw667VMeXVcHkJLhF92t5bHKhpb8/edit?usp=sharing"
     },
     {
       "id": "digicolle-community",
@@ -149,15 +163,17 @@
         "小山愛"
       ],
       "title": "デジカレ修了生コミュニティ",
-      "description": "デジタルカレッジUPの修了生が修了後もLINEを使ってゆるくつながれるコミュニティです。",
+      "description_ja": "デジタルカレッジUPの修了生が修了後もLINEを使ってゆるくつながれるコミュニティです。",
+      "description_en": "A community where graduates of Digital College UP can stay loosely connected through LINE after finishing the program.",
+      "generated": "en",
       "demo_url": "https://oyamaai-lgtm.github.io/line-womenseye/",
       "source_url": "https://github.com/oyamaai-lgtm/line-womenseye",
       "slides_url": "https://drive.google.com/file/d/1CuH7ZMwWAmQEALI7hWXACmq4r7-3Ed2e/view?usp=sharing",
       "other_url": null,
       "submitted_at": "2026-10-09T09:21:27+09:00",
-      "thumbnail": "thumbs/digicolle-community.jpg",
+      "thumbnail": "thumbs/slides/digicolle-community.jpg",
       "award": null,
-      "thumbnail_source": "https://oyamaai-lgtm.github.io/line-womenseye/"
+      "thumbnail_source": "https://drive.google.com/file/d/1CuH7ZMwWAmQEALI7hWXACmq4r7-3Ed2e/view?usp=sharing"
     }
   ]
 }

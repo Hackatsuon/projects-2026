@@ -30,7 +30,7 @@ a{color:var(--sea)}
   radial-gradient(900px 500px at 10% -10%, rgba(82,195,241,.55), transparent 60%),
   radial-gradient(700px 500px at 100% 110%, rgba(253,213,65,.35), transparent 55%),
   var(--navy);color:#fff;padding:64px 16px 56px}
-.hero .in{max-width:1120px;margin:0 auto}
+.hero .in{max-width:1320px;margin:0 auto}
 .kicker{letter-spacing:.22em;font-size:12px;opacity:.75;text-transform:uppercase}
 .hero h1{margin:10px 0 6px;font-size:clamp(34px,6vw,56px);font-weight:800;line-height:1.1;letter-spacing:-.01em}
 .hero .sub{font-size:18px;opacity:.9;margin:0 0 20px}
@@ -43,22 +43,29 @@ a{color:var(--sea)}
 .nav a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7)}
 .nav a .en{color:#fff;opacity:.6}
 .nav svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.langbar{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--card)}
+.lang button{border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--sea);color:#fff}
+.gen{font-size:11px;color:var(--muted);margin-top:2px}
 footer .flinks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px}
 
 /* grid */
-main{max-width:1120px;margin:0 auto;padding:40px 16px 80px}
+main{max-width:1320px;margin:0 auto;padding:40px 16px 80px}
 .count{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}
 .count h2{margin:0;font-size:20px}
 .count .n{color:var(--muted);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px}
 @media (max-width:380px){.grid{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
   display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(11,42,74,.12)}
 .thumb{position:relative;aspect-ratio:16/10;background:var(--navy);display:block;overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
-.award{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-weight:700;font-size:12px;
-  padding:5px 10px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.award{display:inline-flex;align-items:center;gap:5px;background:var(--sun);color:#2F2F2F;font-weight:800;font-size:12px;
+  padding:4px 10px 4px 8px;border-radius:999px;white-space:nowrap;text-transform:none;letter-spacing:0}
+.award svg{width:12px;height:12px;fill:#2F2F2F}
+.team{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 10px}
 .body{padding:18px 20px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
 .team{font-size:12px;letter-spacing:.08em;color:var(--sea);font-weight:700;text-transform:uppercase}
 .title{margin:0;font-size:19px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
@@ -68,14 +75,15 @@ main{max-width:1120px;margin:0 auto;padding:40px 16px 80px}
 .desc{font-size:14px;margin:4px 0 0;white-space:pre-line;color:var(--ink)}
 .desc.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .more{align-self:flex-start;background:none;border:0;padding:0;color:var(--sea);font-size:13px;cursor:pointer;font-family:inherit}
-.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
-.links a{font-size:13px;text-decoration:none;padding:6px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.links{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.links a{font-size:12.5px;text-decoration:none;padding:7px 4px;border-radius:999px;border:1px solid var(--line);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;gap:4px;white-space:nowrap;min-width:0}
+.links a.off{opacity:.35;pointer-events:none}
 .links a:hover{border-color:var(--sea);color:var(--sea)}
 .links a.primary{background:var(--sea);border-color:var(--sea);color:#fff}
 .links a.primary:hover{background:#3570AB}
-.links svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.links svg{width:12px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-footer{max-width:1120px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:var(--muted)}
+footer{max-width:1320px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:var(--muted)}
 .err{padding:24px;border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
 </style>
 </head>
@@ -96,14 +104,20 @@ footer{max-width:1120px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:v
 <main>
   <div class="count">
     <h2>提出プロジェクト <span class="en">Submitted projects</span></h2>
-    <span class="n" id="count"></span>
+    <div class="langbar">
+      <span class="n" id="count"></span>
+      <div class="lang" role="group" aria-label="説明文の言語 / Description language">
+        <button type="button" data-lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
   </div>
   <div class="grid" id="grid"></div>
 </main>
 
 <footer>
   <div class="flinks" id="flinks"></div>
-  <div>データは Final Submission Form への提出内容をもとにしています。説明文は提出されたままの言語で掲載しています。<span class="en">Descriptions are shown in the language they were submitted in.</span></div>
+  <div>最終提出されたプロジェクトに基づいています。注記のある翻訳は運営が付けたものです。<span class="en">Based on the final submissions. Translations marked as such were added by the organizers.</span></div>
   <div style="margin-top:6px">© 2026 Hackatsuon</div>
 </footer>
 
@@ -115,27 +129,33 @@ const ICON = {
   other:'<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>',
 };
 const LABEL = {
-  demo:['デモ','Demo'], code:['ソースコード','Source'], slides:['スライド','Slides'], other:['その他資料','More'],
+  demo:['デモ','Demo'], code:['ソース','Source'], slides:['スライド','Slides'], other:['その他','Other'],
 };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (kind, url, primary) => url
-  ? `<a href="${esc(url)}" target="_blank" rel="noopener" class="${primary?'primary':''}" title="${LABEL[kind][1]}">${ICON[kind]}${LABEL[kind][0]}</a>`
-  : '';
+  ? `<a href="${esc(url)}" target="_blank" rel="noopener" class="${primary?'primary':''}">${ICON[kind]}${LABEL[kind][LANG==='ja'?0:1]}</a>`
+  : `<a class="off" aria-disabled="true" title="${LANG==='ja'?'なし':'Not provided'}">${ICON[kind]}${LABEL[kind][LANG==='ja'?0:1]}</a>`;
+
+let LANG = 'ja';
+try { LANG = localStorage.getItem('hackatsuon-lang') || 'ja'; } catch (e) {}
+const descOf = p => p['description_'+LANG] || p.description_ja || p.description_en || p.description || '';
 
 function card(p){
-  const desc = esc(p.description);
-  const long = (p.description||'').length > 220;
+  const text = descOf(p);
+  const desc = esc(text);
+  const long = text.length > (LANG==='ja' ? 150 : 260);
+  const gen = p.generated === LANG ? `<div class="gen">${LANG==='ja' ? '※ 日本語訳は運営による' : 'Translated by the organizers'}</div>` : '';
   return `<article class="card" id="${esc(p.id)}">
     <a class="thumb" href="${esc(p.demo_url||p.source_url||'#')}" target="_blank" rel="noopener">
       <img src="${esc(p.thumbnail)}" alt="${esc(p.title)}" loading="lazy" onerror="this.remove()">
-      ${p.award ? `<span class="award">${esc(p.award)}</span>` : ''}
     </a>
     <div class="body">
-      <div class="team">${esc(p.team)}</div>
+      <div class="team"><span>${esc(p.team)}</span>${p.award ? `<span class="award"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>${esc(p.award)}</span>` : ''}</div>
       <h3 class="title"><a href="${esc(p.demo_url||p.source_url||'#')}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
       <div class="members">${(p.members||[]).map(esc).join(' · ')}</div>
       <p class="desc ${long?'clamp':''}">${desc}</p>
-      ${long ? `<button class="more" type="button">続きを読む <span class="en">Read more</span></button>` : ''}
+      ${long ? `<button class="more" type="button">${LANG==='ja' ? '続きを読む' : 'Read more'}</button>` : ''}
+      ${gen}
       <div class="links">
         ${link('demo', p.demo_url, true)}
         ${link('code', p.source_url)}
@@ -158,12 +178,21 @@ fetch('projects.json', {cache:'no-cache'}).then(r => r.json()).then(data => {
   document.getElementById('flinks').innerHTML = links.map(l =>
     `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('');
   const list = data.projects || [];
-  const awarded = list.filter(p => p.award), rest = list.filter(p => !p.award);
-  document.getElementById('grid').innerHTML = [...awarded, ...rest].map(card).join('');
   document.getElementById('count').textContent = `${list.length} projects`;
-  document.querySelectorAll('.more').forEach(b => b.addEventListener('click', () => {
-    b.previousElementSibling.classList.remove('clamp'); b.remove();
+  const render = () => {
+    const awarded = list.filter(p => p.award), rest = list.filter(p => !p.award);
+    document.getElementById('grid').innerHTML = [...awarded, ...rest].map(card).join('');
+    document.querySelectorAll('.more').forEach(b => b.addEventListener('click', () => {
+      b.previousElementSibling.classList.remove('clamp'); b.remove();
+    }));
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === LANG)));
+  };
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+    LANG = b.dataset.lang;
+    try { localStorage.setItem('hackatsuon-lang', LANG); } catch (e) {}
+    render();
   }));
+  render();
 }).catch(e => {
   document.getElementById('grid').innerHTML = `<div class="err">projects.json を読み込めませんでした。ローカルで開く場合は <code>python3 -m http.server</code> などで配信してください。<br>${esc(e.message)}</div>`;
 });

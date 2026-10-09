@@ -14,11 +14,13 @@ Hackatsuon 2026（気仙沼）で提出されたプロジェクトをまとめ�
 | フィールド | 内容 |
 |---|---|
 | `id` | 英数字の識別子。サムネのファイル名とページ内アンカー（`#id`）に使う |
-| `team`, `members`, `title`, `description` | フォームの提出内容。説明文は提出された言語のまま |
+| `team`, `members`, `title` | フォームの提出内容 |
+| `description_ja`, `description_en` | 説明文。ページ右上の切り替えで表示言語が変わる |
+| `generated` | `"ja"` か `"en"`: その言語の説明文は運営が翻訳したもの（カードに注記が出る）。両方とも提出者本人の文なら `null` |
 | `demo_url`, `source_url`, `slides_url`, `other_url` | リンク。ないものは `null` |
-| `thumbnail` | サムネ画像のパス |
+| `thumbnail` | サムネ画像のパス。デモ画面は `thumbs/<id>.jpg`、スライド 1 枚目は `thumbs/slides/<id>.jpg`。どちらを使うかはこのパスで切り替える |
 | `thumbnail_source` | サムネを撮った URL（`demo_url` と違う場合のため） |
-| `award` | 受賞名の文字列。`null` なら非表示。値があるとサムネ左上に赤バッジで表示され、受賞プロジェクトが先頭に並ぶ（JSON の順序どおり） |
+| `award` | 受賞名の文字列。`null` なら非表示。値があるとカード内のチーム名の右に黄色いバッジで表示され、受賞プロジェクトが先頭に並ぶ（JSON の順序どおり） |
 
 例: `"award": "最優秀賞 / Grand Prize"`
 
