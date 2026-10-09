@@ -1,4 +1,4 @@
-# Hackatsuon 2026 Showcase
+# Hackatsuon 2026 Project Showcase
 
 Hackatsuon 2026（気仙沼）で提出されたプロジェクトをまとめた 1 枚のサイト。
 
