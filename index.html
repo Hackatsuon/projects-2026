@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackatsuon 2026 Projects</title>
+<meta name="description" content="Hackatsuon 2026（気仙沼）で提出されたプロジェクト一覧 / Projects submitted to Hackatsuon 2026 in Kesennuma, Japan">
+<meta property="og:title" content="Hackatsuon 2026 Projects">
+<meta property="og:description" content="気仙沼で開催した Hackatsuon 2026 の提出プロジェクト一覧">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --navy:#0B2A4A; --sea:#4284C5; --sky:#52C3F1; --red:#D7263D; --sun:#FDD541;
+  --bg:#F6F8FA; --card:#FFFFFF; --ink:#1B2430; --muted:#5B6673; --line:#E3E8EE;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0E1620; --card:#16212E; --ink:#EEF2F6; --muted:#9AA7B5; --line:#273344; --navy:#071A30; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Noto Sans CJK JP",-apple-system,"Segoe UI",Roboto,sans-serif;
+  line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--sea)}
+.en{color:var(--muted);font-size:.86em}
+
+/* header */
+.hero{background:
+  radial-gradient(900px 500px at 10% -10%, rgba(82,195,241,.55), transparent 60%),
+  radial-gradient(700px 500px at 100% 110%, rgba(253,213,65,.35), transparent 55%),
+  var(--navy);color:#fff;padding:64px 16px 56px}
+.hero .in{max-width:1120px;margin:0 auto}
+.kicker{letter-spacing:.22em;font-size:12px;opacity:.75;text-transform:uppercase}
+.hero h1{margin:10px 0 6px;font-size:clamp(34px,6vw,56px);font-weight:800;line-height:1.1;letter-spacing:-.01em}
+.hero .sub{font-size:18px;opacity:.9;margin:0 0 20px}
+.hero p{max-width:720px;margin:0;font-size:15px;opacity:.9}
+.hero p.en{color:#fff;opacity:.65;margin-top:8px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:14px;opacity:.9}
+.meta span b{font-weight:600;margin-right:6px;opacity:.7}
+
+/* grid */
+main{max-width:1120px;margin:0 auto;padding:40px 16px 80px}
+.count{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}
+.count h2{margin:0;font-size:20px}
+.count .n{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+@media (max-width:380px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(11,42,74,.12)}
+.thumb{position:relative;aspect-ratio:16/10;background:var(--navy);display:block;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.award{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-weight:700;font-size:12px;
+  padding:5px 10px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.body{padding:18px 20px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.team{font-size:12px;letter-spacing:.08em;color:var(--sea);font-weight:700;text-transform:uppercase}
+.title{margin:0;font-size:19px;line-height:1.3;font-weight:800;letter-spacing:-.01em}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{text-decoration:underline}
+.members{font-size:13px;color:var(--muted)}
+.desc{font-size:14px;margin:4px 0 0;white-space:pre-line;color:var(--ink)}
+.desc.clamp{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.more{align-self:flex-start;background:none;border:0;padding:0;color:var(--sea);font-size:13px;cursor:pointer;font-family:inherit}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.links a{font-size:13px;text-decoration:none;padding:6px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.links a:hover{border-color:var(--sea);color:var(--sea)}
+.links a.primary{background:var(--sea);border-color:var(--sea);color:#fff}
+.links a.primary:hover{background:#3570AB}
+.links svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+footer{max-width:1120px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:var(--muted)}
+.err{padding:24px;border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <div class="kicker">Hackatsuon 2026 · Kesennuma</div>
+    <h1>Projects</h1>
+    <p class="sub">気仙沼の課題に、技術で取り組んだ 2 週間の成果</p>
+    <p>Hackatsuon（ハッカツオン）は、宮城県気仙沼市で開催する地域密着型のハッカソンです。国内外から集まった参加者が、気仙沼の人たちと一緒に地域の課題を見つけ、技術で解決の形をつくります。このページは、最終提出フォームで提出されたプロジェクトをまとめたものです。</p>
+    <p class="en">Hackatsuon is a civic tech hackathon held in Kesennuma, Miyagi, Japan. Participants from Japan and abroad work with local people to find and tackle the city's challenges with technology. This page lists the projects submitted through the final submission form.</p>
+    <div class="meta" id="meta"></div>
+  </div>
+</header>
+
+<main>
+  <div class="count">
+    <h2>提出プロジェクト <span class="en">Submitted projects</span></h2>
+    <span class="n" id="count"></span>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <div>データは Final Submission Form への提出内容をもとにしています。説明文は提出されたままの言語で掲載しています。<span class="en">Descriptions are shown in the language they were submitted in.</span></div>
+  <div style="margin-top:6px">© 2026 Hackatsuon</div>
+</footer>
+
+<script>
+const ICON = {
+  demo:'<svg viewBox="0 0 24 24"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>',
+  code:'<svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>',
+  slides:'<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></svg>',
+  other:'<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>',
+};
+const LABEL = {
+  demo:['デモ','Demo'], code:['ソースコード','Source'], slides:['スライド','Slides'], other:['その他資料','More'],
+};
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const link = (kind, url, primary) => url
+  ? `<a href="${esc(url)}" target="_blank" rel="noopener" class="${primary?'primary':''}" title="${LABEL[kind][1]}">${ICON[kind]}${LABEL[kind][0]}</a>`
+  : '';
+
+function card(p){
+  const desc = esc(p.description);
+  const long = (p.description||'').length > 220;
+  return `<article class="card" id="${esc(p.id)}">
+    <a class="thumb" href="${esc(p.demo_url||p.source_url||'#')}" target="_blank" rel="noopener">
+      <img src="${esc(p.thumbnail)}" alt="${esc(p.title)}" loading="lazy" onerror="this.remove()">
+      ${p.award ? `<span class="award">${esc(p.award)}</span>` : ''}
+    </a>
+    <div class="body">
+      <div class="team">${esc(p.team)}</div>
+      <h3 class="title"><a href="${esc(p.demo_url||p.source_url||'#')}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+      <div class="members">${(p.members||[]).map(esc).join(' · ')}</div>
+      <p class="desc ${long?'clamp':''}">${desc}</p>
+      ${long ? `<button class="more" type="button">続きを読む <span class="en">Read more</span></button>` : ''}
+      <div class="links">
+        ${link('demo', p.demo_url, true)}
+        ${link('code', p.source_url)}
+        ${link('slides', p.slides_url)}
+        ${link('other', p.other_url)}
+      </div>
+    </div>
+  </article>`;
+}
+
+fetch('projects.json', {cache:'no-cache'}).then(r => r.json()).then(data => {
+  const ev = data.event || {};
+  document.getElementById('meta').innerHTML = [
+    ev.period && `<span><b>期間 / Period</b>${esc(ev.period)}</span>`,
+    ev.location && `<span><b>場所 / Place</b>${esc(ev.location)}</span>`,
+  ].filter(Boolean).join('');
+  const list = data.projects || [];
+  const awarded = list.filter(p => p.award), rest = list.filter(p => !p.award);
+  document.getElementById('grid').innerHTML = [...awarded, ...rest].map(card).join('');
+  document.getElementById('count').textContent = `${list.length} projects`;
+  document.querySelectorAll('.more').forEach(b => b.addEventListener('click', () => {
+    b.previousElementSibling.classList.remove('clamp'); b.remove();
+  }));
+}).catch(e => {
+  document.getElementById('grid').innerHTML = `<div class="err">projects.json を読み込めませんでした。ローカルで開く場合は <code>python3 -m http.server</code> などで配信してください。<br>${esc(e.message)}</div>`;
+});
+</script>
+</body>
+</html>
