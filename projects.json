@@ -81,7 +81,7 @@
       "id": "digicolle",
       "team": "Big ship",
       "members": [
-        "Megumi Itabayashi"
+        "Megumi Itabayashi(W.E.)"
       ],
       "title": "デジカレ受講生専用ページ / Digital College UP Student Page",
       "description_ja": "気仙沼の女性向けデジタル学習プログラム「デジタルカレッジUP」の受講生専用ページです。LINEで流れてしまいがちな次回のお知らせや申し込みフォームを一か所にまとめ、チャットボット「デジカレくん」が質問に答えます。答えられない質問は事務局に届きます。",
@@ -158,9 +158,9 @@
     },
     {
       "id": "digicolle-community",
-      "team": "Ai",
+      "team": "Ai(W.E.)",
       "members": [
-        "小山愛"
+        "小山愛(W.E.)"
       ],
       "title": "デジカレ修了生コミュニティ",
       "description_ja": "デジタルカレッジUPの修了生が修了後もLINEを使ってゆるくつながれるコミュニティです。",
@@ -174,6 +174,25 @@
       "thumbnail": "thumbs/digicolle-community.jpg",
       "award": null,
       "thumbnail_source": "https://oyamaai-lgtm.github.io/line-womenseye/"
+    },
+    {
+      "id": "tsutaeru-button",
+      "team": "Miyuki(W.E.)",
+      "members": [
+        "Miyuki(W.E.)"
+      ],
+      "title": "つたえるボタン",
+      "description_ja": "話せなくても、自分の思いを伝えられるボタンです。表現したい感情や伝えたいことに関するボタンが用意されており、タップするだけで音声が流れ、意思を伝えることができます。",
+      "description_en": "Buttons that let you express yourself even when you cannot speak. Buttons for the feelings and messages you want to convey are laid out, and a single tap plays the matching audio so you can communicate what you mean.",
+      "generated": "en",
+      "demo_url": "https://miyukiti5232.github.io/miyukiti/",
+      "source_url": "https://github.com/miyukiti5232/miyukiti",
+      "slides_url": "https://drive.google.com/file/d/19CUUEhZ-5sjGSC1tFmvBCWE6bJcnv-fT/view?usp=sharing",
+      "other_url": null,
+      "submitted_at": "2026-10-09T17:40:00+09:00",
+      "thumbnail": "thumbs/tsutaeru-button.jpg",
+      "award": null,
+      "thumbnail_source": "https://miyukiti5232.github.io/miyukiti/"
     }
   ]
 }
