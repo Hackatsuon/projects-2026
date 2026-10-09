@@ -41,6 +41,8 @@ python3 tools/make_thumbs.py --only gyoseki,galaxsi
 
 撮影に失敗した URL は、タイトルから生成したカード画像で代替される。
 
+`thumbs/slides/` のスライド 1 枚目は手動で用意したもの。PDF から作る場合は poppler（pdftoppm）だと日本語 CID フォントが抜けることがあるので PyMuPDF（`pip install pymupdf`）でラスタライズする。
+
 ## ローカルで見る
 
 `fetch` で JSON を読むので、`file://` では開けない。
