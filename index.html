@@ -30,7 +30,15 @@ a{color:var(--sea)}
   radial-gradient(900px 500px at 10% -10%, rgba(82,195,241,.55), transparent 60%),
   radial-gradient(700px 500px at 100% 110%, rgba(253,213,65,.35), transparent 55%),
   var(--navy);color:#fff;padding:64px 16px 56px}
-.hero .in{max-width:1100px;margin:0 auto}
+.hero .in{max-width:1100px;margin:0 auto;position:relative}
+.hero .in>*:not(.mascot){position:relative;z-index:1}
+/* ホヤぼーや: 広い画面では右下に、狭くなるにつれて薄くして背景に溶かす */
+.mascot{position:absolute;right:0;bottom:-56px;width:300px;pointer-events:none;user-select:none}
+@media (min-width:1000px){.hero .in{padding-right:340px}}
+@media (min-width:860px) and (max-width:999px){.hero .in{padding-right:220px}
+  .mascot{width:280px;opacity:.7;-webkit-mask-image:linear-gradient(to left,#000 45%,transparent);mask-image:linear-gradient(to left,#000 45%,transparent)}}
+@media (max-width:859px){.mascot{width:min(60vw,280px);right:-28px;bottom:auto;top:-56px;opacity:.42;
+  -webkit-mask-image:radial-gradient(ellipse 75% 75% at 65% 35%,#000 25%,transparent);mask-image:radial-gradient(ellipse 75% 75% at 65% 35%,#000 25%,transparent)}}
 .kicker{letter-spacing:.22em;font-size:12px;opacity:.75;text-transform:uppercase}
 .hero h1{margin:10px 0 6px;font-size:clamp(34px,6vw,56px);font-weight:800;line-height:1.1;letter-spacing:-.01em}
 .hero .sub{font-size:18px;opacity:.9;margin:0 0 20px}
@@ -91,6 +99,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:v
 
 <header class="hero">
   <div class="in">
+    <img class="mascot" src="assets/hoyaboya.png" alt="" aria-hidden="true">
     <div class="kicker">Hackatsuon 2026 · Kesennuma</div>
     <h1>Showcase</h1>
     <p class="sub">気仙沼の課題に、技術で取り組んだ 2 週間の成果</p>

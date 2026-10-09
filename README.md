@@ -5,6 +5,7 @@ Hackatsuon 2026（気仙沼）で提出されたプロジェクトをまとめ�
 - `index.html` – ページ本体（ビルド不要、依存なし）
 - `projects.json` – プロジェクトデータ（ここが正）
 - `thumbs/` – 各プロジェクトのサムネイル
+- `assets/hoyaboya.png` – ヘッダーのホヤぼーや（元画像をトリミングして 800px に縮小したもの）
 - `tools/make_thumbs.py` – サムネイル生成スクリプト
 
 ## データの更新
