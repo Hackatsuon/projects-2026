@@ -193,6 +193,25 @@
       "thumbnail": "thumbs/tsutaeru-button.jpg",
       "award": null,
       "thumbnail_source": "https://miyukiti5232.github.io/miyukiti/"
+    },
+    {
+      "id": "gyosoku",
+      "team": "Gyosoku",
+      "members": [
+        "Pablo"
+      ],
+      "title": "Gyosoku",
+      "description_en": "Gyosoku helps seafood processors plan around uncertain fish arrivals. It brings orders, stock and expected landings together to show possible shortages and support decisions",
+      "description_ja": "Gyosoku は、水揚げが読めない中で水産加工業者が計画を立てるのを助けるツールです。注文・在庫・水揚げ見込みをひとつにまとめ、起こりうる不足を可視化して意思決定を支えます。",
+      "generated": "ja",
+      "demo_url": "https://gyosoku.netlify.app/",
+      "source_url": "https://github.com/AkakpoErnest/Gyosuko",
+      "slides_url": "https://gyosoku.netlify.app/public/Gyosoku_Pablo.pdf",
+      "other_url": null,
+      "submitted_at": "2026-10-09T18:33:00+09:00",
+      "thumbnail": "thumbs/gyosoku.jpg",
+      "award": null,
+      "thumbnail_source": "https://gyosoku.netlify.app/"
     }
   ]
 }
