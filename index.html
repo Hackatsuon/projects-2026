@@ -43,16 +43,16 @@ a{color:var(--sea)}
 .nav a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7)}
 .nav a .en{color:#fff;opacity:.6}
 .nav svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.langbar{display:flex;align-items:center;gap:10px}
+.langbar{display:flex;align-items:center;gap:10px;flex-shrink:0;margin-left:auto}
 .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--card)}
-.lang button{border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+.lang button{border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .lang button[aria-pressed="true"]{background:var(--sea);color:#fff}
 .gen{font-size:11px;color:var(--muted);margin-top:2px}
 footer .flinks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px}
 
 /* grid */
 main{max-width:1320px;margin:0 auto;padding:40px 16px 80px}
-.count{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}
+.count{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}
 .count h2{margin:0;font-size:20px}
 .count .n{color:var(--muted);font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:24px}
