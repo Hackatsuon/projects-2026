@@ -38,6 +38,12 @@ a{color:var(--sea)}
 .hero p.en{color:#fff;opacity:.65;margin-top:8px}
 .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:14px;opacity:.9}
 .meta span b{font-weight:600;margin-right:6px;opacity:.7}
+.nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.nav a{color:#fff;text-decoration:none;font-size:14px;padding:8px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;display:inline-flex;align-items:center;gap:8px}
+.nav a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7)}
+.nav a .en{color:#fff;opacity:.6}
+.nav svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+footer .flinks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px}
 
 /* grid */
 main{max-width:1120px;margin:0 auto;padding:40px 16px 80px}
@@ -83,6 +89,7 @@ footer{max-width:1120px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:v
     <p>Hackatsuon（ハッカツオン）は、宮城県気仙沼市で開催する地域密着型のハッカソンです。国内外から集まった参加者が、気仙沼の人たちと一緒に地域の課題を見つけ、技術で解決の形をつくります。このページは、最終提出フォームで提出されたプロジェクトをまとめたものです。</p>
     <p class="en">Hackatsuon is a civic tech hackathon held in Kesennuma, Miyagi, Japan. Participants from Japan and abroad work with local people to find and tackle the city's challenges with technology. This page lists the projects submitted through the final submission form.</p>
     <div class="meta" id="meta"></div>
+    <nav class="nav" id="nav"></nav>
   </div>
 </header>
 
@@ -95,6 +102,7 @@ footer{max-width:1120px;margin:0 auto;padding:0 16px 48px;font-size:13px;color:v
 </main>
 
 <footer>
+  <div class="flinks" id="flinks"></div>
   <div>データは Final Submission Form への提出内容をもとにしています。説明文は提出されたままの言語で掲載しています。<span class="en">Descriptions are shown in the language they were submitted in.</span></div>
   <div style="margin-top:6px">© 2026 Hackatsuon</div>
 </footer>
@@ -144,6 +152,11 @@ fetch('projects.json', {cache:'no-cache'}).then(r => r.json()).then(data => {
     ev.period && `<span><b>期間 / Period</b>${esc(ev.period)}</span>`,
     ev.location && `<span><b>場所 / Place</b>${esc(ev.location)}</span>`,
   ].filter(Boolean).join('');
+  const links = ev.links || [];
+  document.getElementById('nav').innerHTML = links.map(l =>
+    `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}${l.label_en?` <span class="en">${esc(l.label_en)}</span>`:''}${ICON.demo}</a>`).join('');
+  document.getElementById('flinks').innerHTML = links.map(l =>
+    `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('');
   const list = data.projects || [];
   const awarded = list.filter(p => p.award), rest = list.filter(p => !p.award);
   document.getElementById('grid').innerHTML = [...awarded, ...rest].map(card).join('');

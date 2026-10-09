@@ -18,9 +18,11 @@ Hackatsuon 2026（気仙沼）で提出されたプロジェクトをまとめ�
 | `demo_url`, `source_url`, `slides_url`, `other_url` | リンク。ないものは `null` |
 | `thumbnail` | サムネ画像のパス |
 | `thumbnail_source` | サムネを撮った URL（`demo_url` と違う場合のため） |
-| `award` | 受賞名。`null` なら非表示。値があるとカード左上に赤バッジが付き、先頭に並ぶ |
+| `award` | 受賞名の文字列。`null` なら非表示。値があるとサムネ左上に赤バッジで表示され、受賞プロジェクトが先頭に並ぶ（JSON の順序どおり） |
 
 例: `"award": "最優秀賞 / Grand Prize"`
+
+`event.links` はヘッダーとフッターに出るリンク（`label`, `label_en`, `url`）。
 
 Final Submission Form のスプシからの取り込みは最初の 1 回だけ行い、以後はこの JSON で管理する。
 （スプシ側の重複提出や表記ゆれはここで整理済み）

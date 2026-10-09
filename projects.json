@@ -3,7 +3,19 @@
     "name": "Hackatsuon 2026",
     "period": "2026-09-28 / 2026-10-11",
     "location": "気仙沼 / Kesennuma, Japan",
-    "source": "Final Submission Form"
+    "source": "Final Submission Form",
+    "links": [
+      {
+        "label": "Hackatsuon 公式サイト",
+        "label_en": "Official site",
+        "url": "https://hackatsuon.com"
+      },
+      {
+        "label": "気仙沼市について",
+        "label_en": "About Kesennuma",
+        "url": "https://kesennuma-kanko.jp/"
+      }
+    ]
   },
   "projects": [
     {
@@ -43,18 +55,18 @@
     },
     {
       "id": "gyoseki",
-      "team": "NextWare",
+      "team": "ネクストウェア",
       "members": [
         "榮 翔矢",
         "上野 響"
       ],
-      "title": "魚籍 GYOSEKI",
-      "description": "魚籍（GYOSEKI）は、魚に「戸籍」を持たせ、合法に獲られた素性を証明するトレーサビリティの仕組みです。違法・無報告・無規制（IUU）漁業の安い魚が正規品と同じ市場に紛れ込み、正直に獲った魚の価格まで崩す問題に対し、公的タグを根に区分け単位で来歴を記録。改ざんはブロックチェーンの指紋照合と重量の収支チェックで検知し、証明済みプレミアムとして価値を守ります。まずはまぐろから、魚種を選ばず応用できます。",
+      "title": "魚籍",
+      "description": "気仙沼の魚が水揚げされてから消費者に届くまでのサプライチェーンをブロックチェーンで管理し、IUU漁業による違法漁獲ではないことを証明するシステム。\n気仙沼で獲れた魚1匹1匹の戸籍となる。",
       "demo_url": "https://kesennuma-hackathon.vercel.app/",
       "source_url": "https://github.com/uh0510/kesennuma-hackathon/",
-      "slides_url": "https://warm-bubblegum-4f3df9.netlify.app/%E9%AD%9A%E7%B1%8D_GYOSEKI_%E7%99%BA%E8%A1%A8%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89_NextWare.pdf",
+      "slides_url": "https://kesennuma-hackathon.vercel.app/slides/",
       "other_url": "https://kesennuma-hackathon.vercel.app/rfid/#market",
-      "submitted_at": "2026-10-08T23:54:47+09:00",
+      "submitted_at": "2026-10-08T22:58:47+09:00",
       "thumbnail": "thumbs/gyoseki.jpg",
       "award": null,
       "thumbnail_source": "https://kesennuma-hackathon.vercel.app/rfid/#market"
